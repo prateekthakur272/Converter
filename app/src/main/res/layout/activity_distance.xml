@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Distance">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="48dp"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"
+                android:textColorHint="@color/lime"
+                android:hint="Enter a value"
+                android:inputType="numberDecimal"
+                android:textColor="@color/yellow" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+                <Spinner
+                    android:id="@+id/from_value"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"/>
+
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/from_value"
+                    android:gravity="center"
+                    android:text="To"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/to_value"
+                    android:layout_toEndOf="@+id/to"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:layout_marginStart="8dp" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/convert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convert"
+                android:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/output"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"
+                android:text="Click Convert"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/yellow"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

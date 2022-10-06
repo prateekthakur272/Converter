@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="temperature">Temperature</string>
+    <string name="distance_and_lenght">distance and lenght</string>
+    <string name="currency">Currency</string>
+    <string name="Volume" />
+    <string name="volume">Volume</string>
+    <string name="area">Area</string>
+</resources>
